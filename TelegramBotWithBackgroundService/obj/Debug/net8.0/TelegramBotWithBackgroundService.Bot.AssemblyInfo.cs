@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TelegramBotWithBackgroundService.Bot")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fa2981d213bbfc7f9f48aff5f1d77b678dbb0760")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+842242f5644c0629354d7224fe84c43608e8045e")]
 [assembly: System.Reflection.AssemblyProductAttribute("TelegramBotWithBackgroundService.Bot")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TelegramBotWithBackgroundService.Bot")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

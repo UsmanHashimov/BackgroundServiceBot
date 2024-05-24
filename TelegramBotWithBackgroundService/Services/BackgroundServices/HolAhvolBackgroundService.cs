@@ -10,9 +10,9 @@ namespace TelegramBotWithBackgroundService.Bot.Services.BackgroundServices
     public class HolAhvolBackgroundService : BackgroundService
     {
         private readonly IServiceScopeFactory _serviceScopeFactory;
-        private readonly TelegramBotClient _client;
+        private readonly ITelegramBotClient _client;
 
-        public HolAhvolBackgroundService(IServiceScopeFactory serviceScopeFactory, TelegramBotClient client)
+        public HolAhvolBackgroundService(IServiceScopeFactory serviceScopeFactory, ITelegramBotClient client)
         {
             _serviceScopeFactory = serviceScopeFactory;
             _client = client;
@@ -42,12 +42,12 @@ namespace TelegramBotWithBackgroundService.Bot.Services.BackgroundServices
             {
                 return _client.SendTextMessageAsync(
                     chatId: user.Id,
-                    text: "Yaxshimisiz aka? Bugun dammi yoki Bugun danmi?",
+                    text: "How are you?",
                     cancellationToken: token);
             }
             catch (Exception ex)
             {
-                Console.WriteLine("Qaysidir telba blockladi botni");
+                Console.WriteLine("Oops");
                 return Task.CompletedTask;
             }
         }
